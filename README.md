@@ -1,10 +1,7 @@
 
 # Product Application CRUD opretion with RESTFul Service
 
-The Product application project is a Java Based Spring Boot With RESTFul service application . It has been developed with "Product CRUD Operation" like Add product, Update product, View product and Delete product.
-
-It provieds referense implimantation to connect with various databases such as H2 DB/MySQL/Postgres-SQL/SQL.
-
+The "Product" application project is a Java-based Spring Boot application with RESTful service functionality. It has been developed to perform CRUD operations on products, including adding, updating, viewing, and deleting products. Additionally, it provides reference implementations to connect with various databases such as H2, MySQL, Postgres-SQL, and SQL.”
 
 ## Tech Stack
 
@@ -14,7 +11,7 @@ It provieds referense implimantation to connect with various databases such as H
 
 **Spring Data Jpa**
 
-**MySQL Workbanch**
+**MySQL Workbench**
 
 
 ## Features/API Reference
@@ -24,7 +21,7 @@ It provieds referense implimantation to connect with various databases such as H
 | Features | APIs     | 
 | :-------- | :------- | 
 | `Add_Product` | `http://localhost:8080/product/add` |
-| `All_Product` | `http://localhost:8080/product/fetch_all` |
+| `Fetch_Product` | `http://localhost:8080/product/fetch_all` |
 | `Product_By_Id` | `http://localhost:8080/product/fetch/{id}` |
 | `Update_By_Id` | `http://localhost:8080/product/update/{id}` |
 | `Delete_By_Id` | `http://localhost:8080/product/delete/{id}` |
