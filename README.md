@@ -1,48 +1,91 @@
-## Product Application CRUD opretion with RESTFul Service
 
-The PRoduct application project is a Java Based Spring Boot With RESTFul service application . It has been Developed with Product CRUD Operation like Add product,update product,view product and delete product
+# Product Application CRUD opretion with RESTFul Service
 
-It provieds referense implimantation to connect with various databases  such as H2 DB/MySQL/Postgres-SQL/SQL
+The Product application project is a Java Based Spring Boot With RESTFul service application . It has been developed with "Product CRUD Operation" like Add product, Update product, View product and Delete product.
+
+It provieds referense implimantation to connect with various databases such as H2 DB/MySQL/Postgres-SQL/SQL.
 
 
+## Tech Stack
 
-Tools and Technologies
-Java 8
-Spring Boot - version 2.1.5 RELEASE
-Spring Web MVC - version 5.1.7 RELEASE
-Spring SESSION - version 2.1.6 RELEASE
-Spring Cloud - Open Feign - version 2.1.1 RELEASE
-Netflix Zuul - version 1.3.1
-Netflix Eureka Client/Server - version 2.1.1
-Netflix Ribbon - version 2.3.0
-Redis Client : JEDIS - version 2.9.3
-Spring Data REDIS - version 2.1.8 RELEASE
-Spring Data JPA - version 2.1.8 RELEASE
-Hibernate - version 5.0.4 Finale
-SQL Database engine : Microsoft SQL 2016
-NOSQL Database engine : Redis 3.2.100
-Maven
-Features
+**Java:** 17
 
-Db setup
+**Spring Boot:** 3.3.2
+
+**Spring Data Jpa**
+
+**MySQL Workbanch**
+
+
+## Features/API Reference
 
 
 
-build and run 
-Using Command Prompt
-Go to project root dirictory path: 'https://github.com/bikashmohanty2001/ProductBackendApp.git' copy the path
-open command prompt in your system with appropriate location 
-clone the code using command : git clone https://github.com/bikashmohanty2001/ProductBackendApp.git
-execute the command "mvn clean install" to clean and build the project in project dirictory
-Using IDE (IntelliJ/STS/Eclipse)
-import the download project in appropriat ide.
-run the maven update 
-go to the main java file AppLuncher and the run the application
-Test API 
-Using "POSTMAN"
-bind the API path in the Url section 
-attach appropiat request header or request param
-click on send button to get the response
+| Features | APIs     | 
+| :-------- | :------- | 
+| `Add_Product` | `http://localhost:8080/product/add` |
+| `All_Product` | `http://localhost:8080/product/fetch_all` |
+| `Product_By_Id` | `http://localhost:8080/product/fetch/{id}` |
+| `Update_By_Id` | `http://localhost:8080/product/update/{id}` |
+| `Delete_By_Id` | `http://localhost:8080/product/delete/{id}` |
 
 
 
+
+## Database Setup
+
+
+
+```bash
+#Database Config:mysql
+spring.datasource.url=jdbc:mysql://localhost:3306/fullstackcrudapi
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=username
+spring.datasource.password=password
+
+#hibernet config
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
+
+Create the above appropriate database in your local system.
+## Build and Run The Application
+
+**Using Command Prompt:**
+
+- Go to project root dirictory path and copy it:
+```bash
+https://github.com/bikashmohanty2001/ProductBackendApp.git
+```
+- Open command prompt in your system with appropriate location clone the code using this command:
+
+```bash
+git clone https://github.com/bikashmohanty2001/ProductBackendApp.git
+```
+- execute the command "mvn clean install" to clean and build the project in project dirictory
+
+
+## Using IDE (IntelliJ/STS/Eclipse)
+
+- Import the download project in appropriat IDE.
+- Run the maven update 
+- Go to the main java file AppLuncher and run the application
+
+
+## Test API
+
+**Using "POSTMAN":**
+| Features | APIs     | 
+| :-------- | :------- | 
+| `Add_Product` | `http://localhost:8080/product/add` |
+| `All_Product` | `http://localhost:8080/product/fetch_all` |
+| `Product_By_Id` | `http://localhost:8080/product/fetch/{id}` |
+| `Update_By_Id` | `http://localhost:8080/product/update/{id}` |
+| `Delete_By_Id` | `http://localhost:8080/product/delete/{id}` |
+- Bind the API path in the Url section. 
+- Attach appropiat request header or request param.
+- Click on send button to get the response
+
+
+    
